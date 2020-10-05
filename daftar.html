@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>pendaftaran</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+        table{
+            background-color: honeydew;
+        }
+    </style>
+  </head>
+  <body>
+    <h1 style="color: honeydew; text-align: center;">formulir pendaftaran</h1>
+    <form style="margin-top: 40px; margin-left: 350px; " action="daftar.html" method="post">
+      <table border="1">
+        <tr align="left">
+          <td>no pendaftaran</td>
+          <td>:</td>
+          <td><input type="text" name="no_pendaftaran" size="50"></td>
+        </tr>
+        <tr align="left">
+          <td>Nama Calon Mahasiswa</td>
+          <td>:</td>
+          <td>
+            <input type="text" name="nama_calon_mahasiswa" size="50">
+            </td>
+        </tr>
+        <tr align="left">
+          <td>jenis kelamin</td>
+          <td>:</td>
+          <td><input type="radio" name="jenis_kelamin" value="laki-laki">laki-laki
+              <input type="radio" name="jenis_kelamin" value="perempuan">perempuan</td>
+        </tr>
+        <tr align="left">
+          <td>alamat</td>
+          <td>:</td>
+          <td><input type="text" name="alamat" size="60"></td>
+        </tr>
+        <tr align="left">
+          <td>kodepos</td>
+          <td>:</td>
+          <td><input type="text" name="kodepos" size="10" maxlength="5"></td>
+        </tr>
+        <tr align="left">
+          <td>telepon</td>
+          <td>:</td>
+          <td><input type="text" name="telepon" size="15"></td>
+        </tr>
+        <tr align="left">
+          <td>pendidikan terakhir</td>
+          <td>:</td>
+          <td><input type="radio" name="pendidikan_terakhir" value="smp">SMP
+              <input type="radio" name="pendidikan_terakhir" value="sma">SMA
+              <input type="radio" name="pendidikan_terakhir" value="d3">D3</td>
+        </tr>
+        <tr align="left">
+          <td>pilihan</td>
+          <td>:</td>
+          <td><select name="pilihan">
+
+            <option value="0">======================pilihan======================</option>
+            <option value="s1-ilmu-hukum">S1 - Ilmu Hukum</option>
+            <option value="s1-manajemen">S1 - Manajemen</option>
+            <option value="d3-manajemen-perusahaan">D3 - Manajemen Perusahaan</option>
+            <option value="s1-akuntansi">S1 - Akuntansi</option>
+            <option value="s1-teknik-sipil">S1 - Teknik Sipil</option>
+            <option value="s1-teknik-elektro">S1 - Teknik elektro</option>
+            <option value="s1-teknologi-pangan">S1 - Pengolahan Pangan</option>
+            <option value="s1-psikologi">S1 - Psikologi</option>
+            <option value="s1-sistem-informasi">S1 - Sistem Informasi</option>
+            <option value="s1-tekik-informatika">S1 - Teknik Informatika</option>
+            <option value="s1-ilmu-komunikasi">S1 - Ilmu Komunikasi</option>
+            </select>
+          </td>
+        </tr>
+        <tr align="left">
+          <td>kelas</td>
+          <td>:</td>
+          <td>
+            <input type="radio" name="kelas" value="pagi">PAGI (senin-jumat)<br>
+            <input type="radio" name="kelas" value="sore">SORE (senin-jumat)<br>
+            <input type="radio" name="kelas" value="karyawan">KARYAWAN (sabtu-minggu)<br>
+          </td>
+        </tr>
+        <tr align="center">
+          <td colspan="3">
+            <input type="submit" value="simpan"> <input type="reset" value="batal">
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
